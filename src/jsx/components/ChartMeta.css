@@ -1,0 +1,14 @@
+#app-root-2026-non_plastic_substitutes .app {
+  .nps_meta {
+    margin: 20px 0 0;
+    padding: 0 5px;
+    .nps_meta_row {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 12px;
+      line-height: 14px;
+      & + .nps_meta_row {
+        margin-top: 5px;
+      }
+    }
+  }
+}

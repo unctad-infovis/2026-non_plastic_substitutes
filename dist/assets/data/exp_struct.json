@@ -1,0 +1,122 @@
+{
+  "csv": {
+    "title": ""
+  },
+  "exporting": {
+    "filename": "T12D60Dm01_Fig_ExpStruct"
+  },
+  "chart": {
+    "marginTop": 10
+  },
+  "tooltip": {
+    "headerFormat": "",
+    "pointFormatter": "<b><%=data.name%></b><br/>$<%=Highcharts.numberFormat(data.value, 1)%> billion"
+  },
+  "colors": [
+    "#FBAF17",
+    "#009EDB"
+  ],
+  "series": [
+    {
+      "data": [
+        {
+          "name": "Value-added products",
+          "id": "NPS101"
+        },
+        {
+          "name": "Raw Materials",
+          "id": "NPS102"
+        },
+        {
+          "name": "ALDFG - Natural Fibres",
+          "value": 0.555225683599,
+          "parent": "NPS101"
+        },
+        {
+          "name": "ALDFG - Other",
+          "value": 3.697414720444,
+          "parent": "NPS101"
+        },
+        {
+          "name": "Mineral Products",
+          "value": 87.659946947955,
+          "parent": "NPS101"
+        },
+        {
+          "name": "Natural Fibres - Plant/tree-Based products",
+          "value": 47.834212182353,
+          "parent": "NPS101"
+        },
+        {
+          "name": "Natural Fibres - Products",
+          "value": 30.656859832493,
+          "parent": "NPS101"
+        },
+        {
+          "name": "Minerals",
+          "value": 105.912848593212,
+          "parent": "NPS102"
+        },
+        {
+          "name": "Natural Fibres - Agricultural By-Products",
+          "value": 28.225419004666,
+          "parent": "NPS102"
+        },
+        {
+          "name": "Natural Fibres - Animal-Based",
+          "value": 18.447722729006,
+          "parent": "NPS102"
+        },
+        {
+          "name": "Natural Fibres - Dedicated Crops",
+          "value": 27.363809742614,
+          "parent": "NPS102"
+        },
+        {
+          "name": "Natural Fibres - Plant/tree-Based",
+          "value": 133.964979683819,
+          "parent": "NPS102"
+        }
+      ],
+      "type": "treemap",
+      "levelIsConstant": true,
+      "borderRadius": 4,
+      "allowTraversingTree": true,
+      "interactByLeaf": true,
+      "cursor": "pointer",
+      "levels": [
+        {
+          "level": 1,
+          "colorByPoint": true,
+          "dataLabels": {
+            "enabled": true,
+            "align": "left",
+            "verticalAlign": "top",
+            "pointFormatter": "<b><%=data.point.name%></b><br/>$<%=Highcharts.numberFormat(data.point.value, 0)%> billion",
+            "style": {
+              "fontFamily": "Helvetica Neue, Helvetica, Inter, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "bold",
+              "textOutline": false
+            }
+          }
+        },
+        {
+          "level": 2,
+          "colorVariation": {
+            "key": "brightness",
+            "to": -0.5
+          },
+          "dataLabels": {
+            "enabled": true,
+            "style": {
+              "fontFamily": "Helvetica Neue, Helvetica, Inter, Arial, sans-serif",
+              "fontSize": "12px",
+              "textOutline": false
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
